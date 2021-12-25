@@ -14,7 +14,7 @@ export default function contact({ contacs }) {
                     {contacs.data.map(({ attributes }, key) =>
                         <li className='mb-5' key={key}>
                             <span>{attributes.sosmed} -
-                                <a target={"_blank"} href={attributes.url} className='font-semibold underline'>
+                                <a rel="noreferrer" href={attributes.url} target="_blank" className='font-semibold underline'>
                                     {attributes.username}
                                 </a>
                             </span>

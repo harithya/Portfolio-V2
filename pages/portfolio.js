@@ -5,7 +5,7 @@ import PortfolioDetail from '../components/portfolio/PortfolioDetail'
 import common from '../utilities/common'
 import http from '../utilities/http'
 
-export default function portofolio({ portfolios }) {
+export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
     const [singleData, setSingleData] = useState([])
 

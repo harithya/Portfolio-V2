@@ -11,7 +11,7 @@ export default function MainLayout({ children }) {
             </div>
             <SwitchMode />
             <footer className='text-center py-5'>
-                <span className='xl:text-sm text-xs  font-medium'>Copyright © 2021 Harithya Wisesa. <a target={"_blank"} href='https://www.wisesa.dev/'>
+                <span className='xl:text-sm text-xs  font-medium'>Copyright © 2021 Harithya Wisesa. <a rel="noreferrer" target={"_blank"} href='https://www.wisesa.dev/'>
                     inspiration wisesa.dev</a> </span>
             </footer>
         </div>
