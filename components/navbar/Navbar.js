@@ -2,11 +2,15 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import NavItem from './NavItem'
 import NavMobile from './NavMobile'
+import { useRouter } from 'next/router'
 import Router from 'next/router';
+
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     Router.events.on("routeChangeStart", () => setIsOpen(false))
+    const router = useRouter();
+    const pathUrl = router.asPath.split("/").filter((a) => a)[0] ?? '';
     return (
         <div className='sticky top-0 '>
             <div className='xl:px-60  px-8 border-b-2 border-dashed bg-white dark:bg-black'>
