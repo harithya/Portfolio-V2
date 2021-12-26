@@ -38,7 +38,7 @@ export default function Portofolio({ portfolios }) {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const req = await http.get("portfolios?populate=image");
     const portfolios = req.data;
     return {
