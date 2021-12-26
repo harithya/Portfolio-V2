@@ -4,6 +4,7 @@ import Portfolio from '../components/portfolio/Portfolio'
 import PortfolioDetail from '../components/portfolio/PortfolioDetail'
 import common from '../utilities/common'
 import http from '../utilities/http'
+import MetaSeo from '../components/MetaSeo'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +18,11 @@ export default function Portofolio({ portfolios }) {
     const handleCloseModal = () => setIsOpen(false)
 
     return (
-        <Section title="Portfolio" subtitle="Some collection of my past works.">
+        <Section title="Portfolio" subtitle="Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir.">
+            <MetaSeo
+                title="Portfolio - Harithya Wisesa"
+                description={"Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."}
+            />
             <div className='grid xl:grid-cols-3 grid-cols-1  gap-6'>
                 {(portfolios.data).map(({ attributes, id }) =>
                     <Portfolio

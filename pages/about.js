@@ -2,10 +2,15 @@ import Image from 'next/image'
 import React from 'react'
 import Paragraph from '../components/text/Paragraph'
 import Title from '../components/text/Title'
+import MetaSeo from '../components/MetaSeo'
 
 export default function about() {
     return (
         <div className='flex justify-center  py-16'>
+            <MetaSeo
+                title="About - Harithya Wisesa"
+                description={"Nama Saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer."}
+            />
             <div className='flex  xl:w-8/12 w-full justify-center items-center flex-col'>
                 <Image src={'/img/me.png'} className='rounded-full object-cover' height={235} width={240} />
                 <div className='mt-12 flex flex-col justify-start w-full'>

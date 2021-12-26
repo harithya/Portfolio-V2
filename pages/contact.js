@@ -2,13 +2,18 @@ import React from 'react'
 import Section from '../components/layouts/Section'
 import Paragraph from '../components/text/Paragraph'
 import http from '../utilities/http'
+import MetaSeo from '../components/MetaSeo'
 
 export default function contact({ contacs }) {
     return (
-        <Section title="Contact" className=" mt-5">
-            <div className='xl:w-8/12 pb-36 w-full py-10 '>
+        <Section title="Contact" className="mt-0">
+            <MetaSeo
+                title="Contact - Harithya Wisesa"
+                description={"Anda dapat menghubungi saya dengan banyak cara, saya akan sangat senang jika anda menghubungi saya. "}
+            />
+            <div className='xl:w-8/12 pb-36 w-full py-12 '>
                 <Paragraph>
-                    I’m always excited to connect with everyone so please don’t hesitate to get in touch with me by following my social media bellow:
+                    Anda dapat menghubungi saya dengan banyak cara, saya akan sangat senang jika anda menghubungi saya
                 </Paragraph>
                 <ul className='mt-10 list-disc list-inside'>
                     {contacs.data.map(({ attributes }, key) =>
