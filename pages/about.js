@@ -10,9 +10,11 @@ export default function about() {
                 <div className='mt-12 flex flex-col justify-start w-full'>
                     <Title>About</Title>
                     <Paragraph className='mt-8'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas consequat quam ut condimentum. Aliquam vehicula consequat congue. Mauris nisi tortor, rutrum sed eros vel, ornare congue leo. Ut eget dui ut odio euismod lacinia. Maecenas tincidunt quis magna eget rutrum. Duis sit amet blandit libero. Ut efficitur pretium tincidunt.
+                        Hello World, nama saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer. Tapi untuk saat ini saya lebih cenderung bekerja di bagian mobile developer dan juga fontend menggunakan ekosistem React baik itu React JS ataupun React Native.
                         <br /><br />
-                        In convallis sapien a nisl suscipit tincidunt. Praesent iaculis condimentum aliquet. Maecenas dignissim, lorem ac maximus pulvinar, tortor sem mattis ex, eget imperdiet elit nisi ac metus. Aliquam rhoncus, nunc id volutpat gravida, nunc augue porta urna, sed suscipit dui nulla ut orci. Aliquam nec ante leo. Sed eleifend sapien quam, nec maximus mi posuere fermentum. Morbi non erat at erat porttitor pretium a fringilla ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tristique augue eu lectus maximus efficitur eget id leo. In est dui, pretium hendrerit ullamcorper vel, iaculis et odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam sit amet lacus et velit vehicula suscipit eu eu urna. Cras metus sapien, volutpat in blandit sed, cursus sit amet massa.
+                        Saya juga sedang menjalankan pendidikan Sarjana Informatika di STIMIK Tasikmalaya. Untuk pengalaman saat ini, saya hanya bekerja di CV Abdi Creative dari awal lulus sekolah sampai saat ini. Saya juga suka mengeksplorasi hal hal yang baru khusunya di bidang frontend developer karena saya memiliki ketertarikan di bidang App Design.
+                        <br /><br />
+                        Untuk di luar pengembangan saya suka mendengarkan musik khususnya musik, terkadang belajar bermain gitar sesekali, dan juga suka mencoba  hal hal baru di bidang teknologi seperti OS, Device Mobile dll sebagainya.
                     </Paragraph>
                 </div>
             </div>
