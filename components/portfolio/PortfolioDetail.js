@@ -11,7 +11,7 @@ export default function PortfolioDetail(props) {
             <div className='p-3'>
                 <h5 className='font-semibold xl:text-xl xl:mb-3 mb-2 text-base'>{portfolio.title}</h5>
                 <Paragraph className="mb-3 text-sm xl:text-base">{portfolio.description}</Paragraph>
-                <span className='text-gray-600 font-medium xl:text-sm text-xs'>{portfolio.category}</span>
+                <span className='text-gray-600 dark:text-gray-300 font-medium xl:text-sm text-xs'>{portfolio.category}</span>
             </div>
         </Modal>
     )

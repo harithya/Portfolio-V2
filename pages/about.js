@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import Paragraph from '../components/text/Paragraph'
 import Title from '../components/text/Title'
@@ -6,7 +7,7 @@ export default function about() {
     return (
         <div className='flex justify-center  py-16'>
             <div className='flex  xl:w-8/12 w-full justify-center items-center flex-col'>
-                <img src={'/img/me.png'} className='rounded-full object-cover' height={240} width={240} />
+                <Image src={'/img/me.png'} className='rounded-full object-cover' height={235} width={240} />
                 <div className='mt-12 flex flex-col justify-start w-full'>
                     <Title>About</Title>
                     <Paragraph className='mt-8'>
