@@ -1,13 +1,11 @@
 import React from 'react'
 import { useRouter } from "next/router";
 import Link from 'next/link';
-import { useTheme } from 'next-themes'
 import NoSSR from 'react-no-ssr';
 import MetaSeo from '../components/MetaSeo';
 
 export default function Custom404() {
     const router = useRouter();
-    const { theme } = useTheme()
     return (
         <div className='flex h-screen -mt-20 justify-center flex-col items-center'>
             <MetaSeo
@@ -16,7 +14,7 @@ export default function Custom404() {
             />
             <img
                 src={`/img/notfound.png`}
-                className={`object-contain ${theme == "dark" ? "invert-0" : "invert"}`}
+                className={`object-contain dark:invert-0 invert`}
                 height={350}
                 width={350}
             />

@@ -1,12 +1,10 @@
 import React from 'react'
-import { useTheme } from 'next-themes'
 import Section from '../components/layouts/Section'
 import Paragraph from '../components/text/Paragraph'
 import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
 
 export default function contact({ contacs }) {
-    const { theme } = useTheme()
     return (
         <Section title="Contact" className="mt-0">
             <MetaSeo
@@ -30,7 +28,7 @@ export default function contact({ contacs }) {
                     </ul>
                 </div>
                 <div className='hidden xl:block md:block pl-36'>
-                    <img src='/img/contact.png' alt='contact-backgorund' className={`w-40 object-contain ${theme == "dark" ? "invert" : "invert-0"}`} />
+                    <img src='/img/contact.png' alt='contact-backgorund' className={`w-40 object-contain dark:invert invert-0`} />
                 </div>
             </div>
         </Section>
