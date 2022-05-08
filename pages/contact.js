@@ -1,9 +1,9 @@
 import React from 'react'
+import { useTheme } from 'next-themes'
 import Section from '../components/layouts/Section'
 import Paragraph from '../components/text/Paragraph'
 import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
-import { useTheme } from 'next-themes'
 
 export default function contact({ contacs }) {
     const { theme } = useTheme()
