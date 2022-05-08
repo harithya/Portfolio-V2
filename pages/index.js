@@ -18,7 +18,7 @@ export default function Home() {
         <p className='text-center xl:text-left'>Lihat
           <Link href={"/portfolio"}>
             <a><span className='font-semibold underline'> Portfolio Saya</span></a>
-          </Link> dan juga <a href='https://drive.google.com/file/d/14ZV3-x0KaWJhziEF_QitmSf6D4uRRYPA/view?usp=sharing' target={"_blank"}><span className='font-semibold underline'>Unduh CV Saya</span></a></p>
+          </Link> dan juga <a href='https://drive.google.com/file/d/14ZV3-x0KaWJhziEF_QitmSf6D4uRRYPA/view?usp=sharing' target={"_blank"} rel="noreferrer"><span className='font-semibold underline'>Unduh CV Saya</span></a></p>
       </div>
       <div className='xl:w-6/12 flex xl:justify-end justify-center'>
         <NoSSR>
