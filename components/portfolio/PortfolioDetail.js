@@ -13,9 +13,9 @@ export default function PortfolioDetail(props) {
                 <Paragraph className="mb-3  text-sm leading-6">{portfolio.description}</Paragraph>
                 <div className='flex justify-between items-center mt-8'>
                     <span className='text-gray-600 dark:text-gray-300 font-medium xl:text-sm text-xs'>{portfolio.category}</span>
-                    <a href='#' className='text-blue-500 underline ring-0 outline-none border-none dark:text-gray-300 font-medium xl:text-sm text-xs'>
+                    {portfolio.url && <a href={portfolio.url} target={"_blank"} rel="noreferrer" className='text-blue-500 underline ring-0 outline-none border-none dark:text-gray-300 font-medium xl:text-sm text-xs'>
                         Visit Project
-                    </a>
+                    </a>}
                 </div>
             </div>
         </Modal>

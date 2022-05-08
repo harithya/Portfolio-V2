@@ -6,7 +6,7 @@ import MetaSeo from '../components/MetaSeo'
 import { useTheme } from 'next-themes'
 
 export default function contact({ contacs }) {
-    const { theme } = useTheme();
+    const { theme } = useTheme()
     return (
         <Section title="Contact" className="mt-0">
             <MetaSeo
