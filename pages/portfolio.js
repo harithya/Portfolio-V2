@@ -5,6 +5,7 @@ import PortfolioDetail from '../components/portfolio/PortfolioDetail'
 import common from '../utilities/common'
 import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
+import axios from 'axios'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -24,13 +25,13 @@ export default function Portofolio({ portfolios }) {
                 description={"Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."}
             />
             <div className='grid xl:grid-cols-3 grid-cols-1  gap-6'>
-                {(portfolios.data).map(({ attributes, id }) =>
+                {portfolios.map((value) =>
                     <Portfolio
-                        key={id}
-                        img={common.image(attributes.image)}
-                        title={attributes.title}
-                        category={attributes.category}
-                        onClick={() => handleOpenModal(attributes)}
+                        key={value.id}
+                        img={value.img}
+                        title={value.title}
+                        category={value.category}
+                        onClick={() => handleOpenModal(value)}
                     />)}
 
             </div>
@@ -44,7 +45,7 @@ export default function Portofolio({ portfolios }) {
 }
 
 export async function getStaticProps() {
-    const req = await http.get("portfolios?populate=image");
+    const req = await axios.get("http://localhost:3000/api/portofolio");
     const portfolios = req.data;
     return {
         props: {

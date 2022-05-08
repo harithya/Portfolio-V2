@@ -7,7 +7,7 @@ import MetaSeo from '../components/MetaSeo';
 export default function Home() {
   const { theme } = useTheme()
   return (
-    <div className='h-screen -mt-28 xl:mt-0 mb-10 xl:mb-0 flex xl:items-center xl:flex-row flex-col-reverse'>
+    <div className='h-screen -mt-32 xl:mt-0 mb-10 xl:mb-0 flex xl:items-center xl:flex-row flex-col-reverse'>
       <MetaSeo
         title='Hello World, i`m Harithya Wisesa'
         description='Hello World, nama saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer. Tapi untuk saat ini saya lebih cenderung bekerja di bagian mobile developer dan juga fontend menggunakan ekosistem React baik itu React JS ataupun React Native.'
@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <div className='xl:w-6/12 flex xl:justify-end justify-center'>
         <NoSSR>
-          <img src={`/img/${(theme == 'dark') ? 'light-bg.png' : 'dark-bg.png'}`} className='object-contain xl:h-96 xl:w-96 h-60 w-60 mb-10 xl:mb-0' />
+          <img src={`/img/${(theme == 'dark') ? 'light-bg.png' : 'dark-bg.png'}`} alt='BG-Image' className='object-contain xl:h-96 xl:w-96 h-60 w-60 mb-10 xl:mb-0' />
         </NoSSR>
       </div>
     </div>

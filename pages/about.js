@@ -12,7 +12,7 @@ export default function about() {
                 description={"Nama Saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer."}
             />
             <div className='flex  xl:w-8/12 w-full justify-center items-center flex-col'>
-                <Image src={'/img/me.png'} className='rounded-full object-cover' height={235} width={240} />
+                <Image src={'/img/me.png'} alt='Nama Saya Harithya Wisesa' className='rounded-full object-cover' height={235} width={240} />
                 <div className='mt-12 flex flex-col justify-start w-full'>
                     <Title>About</Title>
                     <Paragraph className='mt-8'>
