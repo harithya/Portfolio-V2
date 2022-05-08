@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import Section from '../components/layouts/Section'
 import Portfolio from '../components/portfolio/Portfolio'
 import PortfolioDetail from '../components/portfolio/PortfolioDetail'
-import common from '../utilities/common'
-import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
 import axios from 'axios'
 
@@ -45,9 +43,8 @@ export default function Portofolio({ portfolios }) {
 }
 
 export async function getStaticProps() {
-
-    const req = await axios.get("https://harithya.vercel.app/api/portofolio");
-    const portfolios = req.data;
+    const req = await axios.get("https://api.jsonbin.io/b/6277327f25069545a32efe81");
+    const portfolios = req.data ?? [];
     return {
         props: {
             portfolios
