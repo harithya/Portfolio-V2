@@ -6,7 +6,7 @@ export default function Modal(props) {
         <Transition appear show={props.isOpen} as={Fragment}>
             <Dialog
                 as="div"
-                className="fixed inset-0 backdrop-blur-sm bg-white/10 dark:bg-black/75 z-10 overflow-y-auto"
+                className="fixed inset-0 backdrop-blur-sm bg-white/10 dark:bg-black/75 z-50 overflow-y-auto"
                 onClose={props.onClose}
             >
                 <div className="min-h-screen px-4 text-center">
