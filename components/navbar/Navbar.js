@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className='xl:px-60  px-8 border-b-2 border-dashed bg-white dark:bg-black'>
                 <div className='flex items-center justify-between'>
                     <Link href="/">
-                        <a> <h5 className='font-doodle text-xl mr-8 cursor-pointer tracking-widest'>Harithya</h5></a>
+                        <a> <h5 className='font-doodle text-2xl mr-8 cursor-pointer tracking-widest'>Harithya</h5></a>
                     </Link>
                     <div>
                         <button onClick={() => setIsOpen(!isOpen)} className='xl:hidden dark:hover:bg-gray-800 hover:bg-gray-300 py-4 px-5 block'>

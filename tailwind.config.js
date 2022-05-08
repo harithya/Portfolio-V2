@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Inter', 'sans-serif'],
-      'doodle': ['Pacifico', 'cursive']
+      'doodle': ['Gochi Hand', 'cursive']
     },
     extend: {},
   },
