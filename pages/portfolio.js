@@ -45,7 +45,8 @@ export default function Portofolio({ portfolios }) {
 }
 
 export async function getStaticProps() {
-    const req = await axios.get("http://localhost:3000/api/portofolio");
+
+    const req = await axios.get("https://harithya.vercel.app/api/portofolio");
     const portfolios = req.data;
     return {
         props: {
