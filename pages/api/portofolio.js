@@ -99,8 +99,7 @@ const data = [
     category: "Web Application",
     description: "Lapak pede adalah aplikasi toko online sederhana digunakan untuk menjual produk khusunya sembako",
     img: "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1651976750/portofolio/lapakpede_uugcno.png"
-  },
-
+  }
 ]
 
 export default function handler(req, res) {

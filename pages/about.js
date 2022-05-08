@@ -11,9 +11,9 @@ export default function about() {
                 title="About - Harithya Wisesa"
                 description={"Nama Saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer."}
             />
-            <div className='flex  xl:w-8/12 w-full justify-center items-center flex-col'>
-                <Image src={'/img/me.png'} alt='Nama Saya Harithya Wisesa' className='rounded-full object-cover' height={235} width={240} />
-                <div className='mt-12 flex flex-col justify-start w-full'>
+            <div className='flex xl:w-8/12 w-full justify-center items-center flex-col'>
+                <Image src={'/img/me.png'} data-aos="fade-up" alt='Nama Saya Harithya Wisesa' className='rounded-full object-cover' height={235} width={240} />
+                <div className='mt-12 flex flex-col justify-start w-full' data-aos="fade-up">
                     <Title>About</Title>
                     <Paragraph className='mt-8'>
                         Hello World, nama saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer. Tapi untuk saat ini saya lebih cenderung bekerja di bagian mobile developer dan juga fontend menggunakan ekosistem React baik itu React JS ataupun React Native.

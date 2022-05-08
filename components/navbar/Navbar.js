@@ -12,8 +12,8 @@ export default function Navbar() {
     const router = useRouter();
     const pathUrl = router.asPath.split("/").filter((a) => a)[0] ?? '';
     return (
-        <div className='sticky top-0 '>
-            <div className='xl:px-60  px-8 border-b-2 border-dashed bg-white dark:bg-black'>
+        <div className='sticky top-0  z-50'>
+            <div className='xl:px-60  px-8 border-b-2 border-dashed backdrop-blur-md bg-white/80 dark:bg-black'>
                 <div className='flex items-center justify-between'>
                     <Link href="/">
                         <a> <h5 className='font-doodle text-2xl mr-8 cursor-pointer tracking-widest'>Harithya</h5></a>
