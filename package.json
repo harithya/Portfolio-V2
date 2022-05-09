@@ -4,12 +4,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
     "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
+    "aos": "^2.3.4",
     "axios": "^0.24.0",
     "next": "12.0.7",
     "next-seo": "^4.28.1",

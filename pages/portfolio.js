@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import Section from '../components/layouts/Section'
 import Portfolio from '../components/portfolio/Portfolio'
 import PortfolioDetail from '../components/portfolio/PortfolioDetail'
-import common from '../utilities/common'
-import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
+import axios from 'axios'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -23,14 +22,14 @@ export default function Portofolio({ portfolios }) {
                 title="Portfolio - Harithya Wisesa"
                 description={"Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."}
             />
-            <div className='grid xl:grid-cols-3 grid-cols-1  gap-6'>
-                {(portfolios.data).map(({ attributes, id }) =>
+            <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6' data-aos="fade-up">
+                {portfolios.map((value) =>
                     <Portfolio
-                        key={id}
-                        img={common.image(attributes.image)}
-                        title={attributes.title}
-                        category={attributes.category}
-                        onClick={() => handleOpenModal(attributes)}
+                        key={value.id}
+                        img={value.img}
+                        title={value.title}
+                        category={value.category}
+                        onClick={() => handleOpenModal(value)}
                     />)}
 
             </div>
@@ -44,8 +43,8 @@ export default function Portofolio({ portfolios }) {
 }
 
 export async function getStaticProps() {
-    const req = await http.get("portfolios?populate=image");
-    const portfolios = req.data;
+    const req = await axios.get("https://api.jsonbin.io/b/6277327f25069545a32efe81/1");
+    const portfolios = req.data ?? [];
     return {
         props: {
             portfolios

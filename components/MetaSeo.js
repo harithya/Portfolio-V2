@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo'
 import constant from '../utilities/constant'
 
 export default function MetaSeo(props) {
+    const keyword = props.keyword ?? constant.keyword
     return (
         <Head>
             <title>{props.title}</title>
@@ -17,6 +18,7 @@ export default function MetaSeo(props) {
                     name="description"
                     content={props.description}
                 />
+                <meta name="keywords" content={keyword} />
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={constant.url} />

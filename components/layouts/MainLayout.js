@@ -4,15 +4,16 @@ import SwitchMode from '../SwitchMode'
 
 export default function MainLayout({ children }) {
     return (
-        <div className='container dark:bg-black '>
+        <div className=' dark:bg-black '>
             <Navbar />
             <div className='xl:px-60 px-8'>
                 {children}
             </div>
             <SwitchMode />
             <footer className='text-center py-5'>
-                <span className='xl:text-sm text-xs  font-medium'>Copyright © 2021 Harithya Wisesa. <a rel="noreferrer" target={"_blank"} href='https://www.wisesa.dev/'>
-                    inspiration wisesa.dev</a> </span>
+                <span className='xl:text-sm text-xs  font-medium'>Copyright © 2021 Haruthya. inspiration  <a rel="noreferrer" target={"_blank"} className="underline text-blue-500" href='https://www.wisesa.dev/'>
+                    wisesa.dev</a> & illustration  <a rel="noreferrer" target={"_blank"} className="underline text-blue-500" href='https://weareskribbl.com/'>
+                        weareskribbl.com</a> </span>
             </footer>
         </div>
     )
