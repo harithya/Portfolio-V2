@@ -1,7 +1,7 @@
 ![Preview Web](https://raw.githubusercontent.com/harithya/Portfolio-V2/main/public/meta.png)
 
-Demo Website [harithya.vercel.app](https://harithya.vercel.app/) Made using next.js and tailwind-css.
-
+<p align="center">Demo Website <a href="https://harithya.vercel.app/">visit here</a>. Made using next.js and tailwind-css.
+</p>
 ## Getting Started
 
 First, run the development server:
