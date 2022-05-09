@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Preview Web](https://raw.githubusercontent.com/harithya/Portfolio-V2/main/public/meta.png)
+
+Demo Website [harithya.vercel.app](https://harithya.vercel.app/) Made using next.js and tailwind-css.
 
 ## Getting Started
 
