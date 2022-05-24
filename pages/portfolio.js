@@ -43,7 +43,7 @@ export default function Portofolio({ portfolios }) {
 }
 
 export async function getStaticProps() {
-    const req = await axios.get("https://api.jsonbin.io/b/6277327f25069545a32efe81/1");
+    const req = await axios.get("https://api.jsonbin.io/b/6277327f25069545a32efe81/4");
     const portfolios = req.data ?? [];
     return {
         props: {
