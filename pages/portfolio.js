@@ -4,6 +4,7 @@ import Portfolio from '../components/portfolio/Portfolio'
 import PortfolioDetail from '../components/portfolio/PortfolioDetail'
 import MetaSeo from '../components/MetaSeo'
 import axios from 'axios'
+import Badge from '../components/Badge'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,12 @@ export default function Portofolio({ portfolios }) {
                 title="Portfolio - Harithya Wisesa"
                 description={"Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."}
             />
+            <div className='flex mb-5 flex-wrap gap-x-6'>
+                <Badge>Semuanya</Badge>
+                <Badge>Mobile Application</Badge>
+                <Badge>Web Application</Badge>
+                <Badge>Web Design</Badge>
+            </div>
             <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6' data-aos="fade-up">
                 {portfolios.map((value) =>
                     <Portfolio
