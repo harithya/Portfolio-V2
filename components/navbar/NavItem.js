@@ -12,6 +12,5 @@ export default function NavItem(props) {
                 </a>
             </Link>
         </li>
-
     )
 }

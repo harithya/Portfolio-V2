@@ -1,0 +1,121 @@
+[
+    {
+      "id": 1,
+      "title": "Abdi Health Medical",
+      "category": "Mobile Application",
+      "description": "Abdi Health merupakan aplikasi untuk membantu dokter untuk mengolah data pasien yang ada di rumah sakitnya. Aplikasi ini dibuat dengan React Native dan Laravel",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359579/portofolio/abdi_health_kl9zp1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Absensi Setda Tasikmalaya",
+      "category": "Mobile Application",
+      "description": "Absensi Setda Tasikmalaya merupakan aplikasi untuk mengolah data absensi setda tasikmalaya. Memiliki fitur deteksi fake gps agar pegawai tidak melakukan kecurangan",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359579/portofolio/absensi_setda_y52azt.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Kasadaya",
+      "category": "Mobile Application",
+      "description": "Kasadaya adalah aplikasi untuk masyarakat melakukan pengepulan minyak jelantah di kasadaya. Aplikasi ini dibuat dengan React Native dan Laravel",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359576/portofolio/kasadaya_axia1l.jpg",
+      "url": "https://play.google.com/store/apps/details?id=com.kasadaya"
+    },
+    {
+      "id": 4,
+      "title": "Abdi POS (Point of Sale)",
+      "category": "Mobile Application",
+      "description": "Abdi POS merupakan aplikasi untuk membantu penjualan obat di rumah sakit. Aplikasi ini terintegrasi dengan abdi health untuk melakukan pembayaran pasien dan juga terdapat fitur untuk print struk dan cetak invoice",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359579/portofolio/abdi_pos_q2b8ei.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Al Luthfi (Point of Sale)",
+      "category": "Mobile Application",
+      "description": "Al Luthfi adalah aplikasi yang digunakan oleh sales al luthfi untuk melakukan transaksi penjualan pakaian muslim, terdapat fitur laporan yang penjualan barang, hutang customer dan juga statistik penjualan yang membantu untuk kinerja perusahaan",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359576/portofolio/alluthfi_ysqt7e.jpg"
+    },
+    {
+      "id": 6,
+      "title": "SPBU Integration Report (SIR)",
+      "category": "Mobile Application",
+      "description": "Aplikasi SPBU ini dibuat untuk membantu untuk melakukan laporan management bensin dan gas. Aplikasi ini dibuat dengan React Native dan Laravel",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359579/portofolio/spbu_mol83f.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Sadesa Desa Sukasukur",
+      "category": "Web Design",
+      "description": "Website desa sukasukur yang terintegrasi dengan aplikasi sadesa, website ini menampilkan informasi mengenai desa sukasukur",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359577/portofolio/sadesa_web_pyczhs.jpg",
+      "url": "https://web.sadesa.id/"
+    },
+    {
+      "id": 8,
+      "title": "Bumdes Sadesa (E-Commerce)",
+      "category": "Web Design",
+      "description": "Bumdes sadesa merupakan sebuah e-commerce untuk masyarakat desa yang memiliki bisnis yang berhubungan dengan kegiatan desa. e-commerce ini sudah di lengkapi dengan fitur pembayaran dengan midtrans",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359575/portofolio/bumdes_y2nrac.jpg",
+      "url": "https://bumdes.langitbiru.id/"
+    },
+    {
+      "id": 9,
+      "title": "Gallery Arrasyida",
+      "category": "Web Design",
+      "description": "Gallery Arrasyida adalah katalog untuk menampilkan produk yang di jual oleh seller untuk keperluan facebook ads dll, dengan fitur yang sangat sederhana memudahkan customer untuk membeli melalu WA tanpa perlu melakukan login",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359575/portofolio/arrasida_s8a6pb.jpg",
+      "url": "https://arrasyida.com/"
+    },
+    {
+      "id": 10,
+      "title": "Arsip Surat Setda Ciamis",
+      "category": "Web Application",
+      "description": "Aplikasi arsip surat yang digunakan oleh setda ciamis untuk mengus surat yang ada di kantor. aplikasi ini dibuat menggunakan laravel",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359577/portofolio/siks_nmbidy.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Sadesa Mobile",
+      "category": "Mobile Application",
+      "description": "Sadesa mobile digunakan oleh masyarakat untuk melihat berita tentang desa mereka dan juga melakukan pengajuan surat di desa tanpa perlu mengantri di kantor desa",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359577/portofolio/sadesa_mobile_d4anpw.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Website Sekolah PPI7 Cempaka Warna",
+      "category": "Web Design",
+      "description": "Web PPI7 Cempaka Warna dibuat untuk menampilkan informasi tentang sekolah tersebut dan juga telah dilengkapi dengan PPDB online juga",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359575/portofolio/ppi7_glrgsg.jpg",
+      "url": "https://ppi7cempakawarna.id"
+    },
+    {
+      "id": 13,
+      "title": "Sadesa App",
+      "category": "Web Application",
+      "description": "Sadesa App ini merupakan aplikasi yang menjadi inti dari ekosistem sadesa, terdapat management penduduk, grafik berdasarkan surat dibuat untuk analisa keperluan desa dan masih banyak lagi",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359577/portofolio/sadesa_wbehta.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Lapak Pede",
+      "category": "Web Application",
+      "description": "Lapak pede adalah aplikasi toko online sederhana digunakan untuk menjual produk khusunya sembako",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359575/portofolio/lapakpede_crs5vy.jpg",
+      "url": "https://lapakpede.com/"
+    },
+    {
+      "id": 15,
+      "title": "Pokedex",
+      "category": "Mobile Application",
+      "description": "Pokedex adalah sebuah aplikasi untuk melihat database pokemon dan juga anda bisa menangkap pokemon yang anda sukai pada aplikasi ini",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1653359579/portofolio/pokedex_m353yh.jpg",
+      "url": "https://github.com/harithya/Pokedex-/releases/tag/v.1.0.0"
+    },
+    {
+      "id": 16,
+      "title": "Instrument Pendududk Dinsos Banjar",
+      "category": "Mobile Application",
+      "description": "Aplikasi Instrument ini digunakan oleh tim lapangan dinsos banjar untuk mengsurvey tingkat kemiskinan yang terjadi di kota Banjar",
+      "img": "https://res.cloudinary.com/cv-abdi-creative/image/upload/v1660272251/portofolio/instrument_fnpgx6.jpg"
+    }
+  ]

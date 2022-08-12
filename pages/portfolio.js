@@ -3,7 +3,7 @@ import Section from '../components/layouts/Section'
 import Portfolio from '../components/portfolio/Portfolio'
 import PortfolioDetail from '../components/portfolio/PortfolioDetail'
 import MetaSeo from '../components/MetaSeo'
-import axios from 'axios'
+import porto from '../public/sample.json'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -42,9 +42,8 @@ export default function Portofolio({ portfolios }) {
     )
 }
 
-export async function getStaticProps() {
-    const req = await axios.get("https://api.jsonbin.io/b/6277327f25069545a32efe81/5");
-    const portfolios = req.data ?? [];
+export function getStaticProps() {
+    const portfolios = porto;
     return {
         props: {
             portfolios
