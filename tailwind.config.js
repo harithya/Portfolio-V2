@@ -9,7 +9,13 @@ module.exports = {
       'sans': ['Inter', 'sans-serif'],
       'doodle': ['Gochi Hand', 'cursive']
     },
-    extend: {},
+    extend: {
+      cursor: {
+        // pencil
+        'pencil': "url(/img/pencil.png) 0 24, auto",
+        'pencil-dark': "url(/img/pencil-invert.png) 0 24, auto",
+      }
+    },
   },
   plugins: [],
 }
