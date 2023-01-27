@@ -17,14 +17,13 @@ export default function contact({ contacs }) {
                         Anda dapat menghubungi saya dengan banyak cara, saya akan sangat senang jika anda menghubungi saya
                     </Paragraph>
                     <ul className='mt-10 list-disc list-inside'>
-                        {contacs.data.map(({ attributes }, key) =>
-                            <li className='mb-5' key={key}>
-                                <span>{attributes.sosmed} -
-                                    <a rel="noreferrer" href={attributes.url} target="_blank" className='font-semibold underline'>
-                                        {attributes.username}
-                                    </a>
-                                </span>
-                            </li>)}
+                        {contacs.map((item, key) => <li className='mb-5' key={key}>
+                            <span>{item.title} -
+                                <a rel="noreferrer" href={item.link} target="_blank" className='font-semibold underline'>
+                                    {item.value}
+                                </a>
+                            </span>
+                        </li>)}
                     </ul>
                 </div>
                 <div className='hidden xl:block md:block pl-36'>
@@ -36,7 +35,7 @@ export default function contact({ contacs }) {
 }
 
 export async function getStaticProps() {
-    const req = await http.get("contacts");
+    const req = await http.get("items/contact");
     const contacs = req.data;
     return {
         props: {
