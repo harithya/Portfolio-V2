@@ -1,5 +1,4 @@
 import React from 'react'
-import common from '../../utilities/common';
 import constant from '../../utilities/constant';
 import Modal from '../Modal'
 import Paragraph from '../text/Paragraph'
@@ -16,10 +15,10 @@ export default function PortfolioDetail(props) {
                 <div className='flex justify-between items-center mt-8'>
                     <span className='text-gray-600 dark:text-gray-300 font-medium xl:text-sm text-xs'>{portfolio.category}</span>
                     <div className="flex items-center space-x-5">
-                        {portfolio.github && <a href={portfolio.github} target="_blank" className="ring-0 text-gray-800 outline-none">
+                        {portfolio.github && <a href={portfolio.github} rel="noreferrer" target="_blank" className="ring-0 text-gray-800 outline-none">
                             <FaGithub size={18} />
                         </a>}
-                        {portfolio.link && <a href={portfolio.link} target="_blank" className="ring-0 text-gray-800 outline-none">
+                        {portfolio.link && <a href={portfolio.link} rel="noreferrer" target="_blank" className="ring-0 text-gray-800 outline-none">
                             <FaGlobe size={18} />
                         </a>}
                     </div>
