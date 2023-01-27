@@ -1,5 +1,4 @@
 import React from 'react'
-import common from '../../utilities/common';
 import constant from '../../utilities/constant';
 import Modal from '../Modal'
 import Paragraph from '../text/Paragraph'
