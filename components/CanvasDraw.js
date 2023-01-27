@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { ReactSketchCanvas } from 'react-sketch-canvas';
-import Path from '../public/path.json';
 
 const CanvasDraw = ({ colors, color, onChange }) => {
     const onChangeColor = (val) => {
@@ -8,15 +7,9 @@ const CanvasDraw = ({ colors, color, onChange }) => {
     }
     const canvas = useRef();
 
-    useEffect(() => {
-        canvas.current.loadPaths(Path)
-    }, [])
-
     const onRemoveCanvas = () => {
         canvas.current.clearCanvas()
-        canvas.current.loadPaths(Path)
     }
-
 
     return (
         <div>
