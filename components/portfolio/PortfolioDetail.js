@@ -9,7 +9,7 @@ export default function PortfolioDetail(props) {
     return (
         <Modal isOpen={props.isOpen} onClose={props.onClose}>
             <img src={constant.storage + `${portfolio.img?.path}`} alt={portfolio.title} className='object-cover' />
-            <div className='p-3'>
+            <div className='p-3' >
                 <h5 className='font-semibold xl:text-xl xl:mb-3 mb-2 text-base'>{portfolio.title}</h5>
                 <Paragraph className="mb-3  text-sm leading-6">{portfolio.description}</Paragraph>
                 <div className='flex justify-between items-center mt-8'>
