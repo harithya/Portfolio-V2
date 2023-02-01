@@ -3,6 +3,7 @@ import Section from '../components/layouts/Section'
 import Paragraph from '../components/text/Paragraph'
 import http from '../utilities/http'
 import MetaSeo from '../components/MetaSeo'
+import Image from 'next/image'
 
 export default function contact({ contacs }) {
     return (
@@ -26,8 +27,16 @@ export default function contact({ contacs }) {
                         </li>)}
                     </ul>
                 </div>
-                <div className='hidden xl:block md:block pl-36'>
-                    <img src='/img/contact.png' alt='contact-backgorund' className={`w-40 object-contain dark:invert invert-0`} />
+                <div className='hidden xl:block md:block pl-36 relative'>
+                    <Image
+                        src='/img/contact.png'
+                        alt='contact-backgorund'
+                        layout='fill'
+                        height={200}
+                        width={200}
+                        objectFit="contain"
+                        className={`dark:invert invert-0`}
+                    />
                 </div>
             </div>
         </Section>
