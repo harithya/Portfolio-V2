@@ -3,12 +3,21 @@ import constant from '../../utilities/constant';
 import Modal from '../Modal'
 import Paragraph from '../text/Paragraph'
 import { FaGithub, FaGlobe } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function PortfolioDetail(props) {
     const portfolio = props.data;
     return (
         <Modal isOpen={props.isOpen} onClose={props.onClose}>
-            <img src={constant.storage + `${portfolio.img?.path}`} alt={portfolio.title} className='object-cover' />
+            <Image
+                src={constant.storage + `${portfolio.img?.path}`}
+                alt={portfolio.title}
+                className='object-cover'
+                layout='responsive'
+                width={75}
+                height={60}
+                objectFit='contain'
+            />
             <div className='p-3' >
                 <h5 className='font-semibold xl:text-xl xl:mb-3 mb-2 text-base'>{portfolio.title}</h5>
                 <Paragraph className="mb-3  text-sm leading-6">{portfolio.description}</Paragraph>

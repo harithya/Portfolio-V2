@@ -39,7 +39,7 @@ export default function Modal(props) {
                         leaveTo="opacity-0 scale-95"
                     >
                         <div className="inline-block relative w-full max-w-xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white/90 dark:bg-black/50 border-2 border-dashed shadow-xl rounded-2xl">
-                            <a onClick={props.onClose} className='absolute cursor-pointer dark:bg-black bg-white right-3 top-3 border-2 rounded-full p-2 border-dashed'>
+                            <a onClick={props.onClose} className='absolute cursor-pointer dark:bg-black bg-white right-3 top-3 border-2 rounded-full p-2 border-dashed z-50'>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 dark:text-white text-black w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
