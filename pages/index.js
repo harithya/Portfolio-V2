@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link';
 import MetaSeo from '../components/MetaSeo';
 import http from '../utilities/http';
 import constant from '../utilities/constant';
 import Typewriter from 'typewriter-effect';
+import Image from 'next/image';
 
 export default function Home({ setting }) {
-  // const colors = ['#FE8A8A', '#51B0FF', '#8ECC47']
-  // const [color, setColor] = useState('#FE8A8A')
-
   return (
     <div className='h-screen -mt-32 xl:mt-0 mb-10 xl:mb-0 flex xl:items-center xl:flex-row flex-col-reverse' >
       <MetaSeo
@@ -32,8 +30,8 @@ export default function Home({ setting }) {
             <a><span className='font-semibold underline'> Portfolio Saya</span></a>
           </Link> dan juga <a href={setting.cv_link} target={"_blank"} rel="noreferrer"><span className='font-semibold underline'>Unduh CV Saya</span></a></p>
       </div>
-      <div className='xl:w-6/12 flex xl:justify-end justify-center' data-aos="fade-up">
-        <img src={constant.storage + `${setting.img?.path}`} alt='BG-Image' className={`object-contain xl:h-96 xl:w-96 h-60 w-60 mb-10 xl:mb-0 dark:invert invert-0`} />
+      <div className='xl:w-6/12 flex xl:justify-end justify-center h-80 '>
+        <Image src={constant.storage + `${setting.img?.path}`} layout="fixed" height={300} width={300} alt='BG-Image' className={`object-contain mb-10 xl:mb-0 dark:invert invert-0`} />
       </div>
     </div>
   )
