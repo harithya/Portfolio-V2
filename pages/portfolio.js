@@ -6,7 +6,6 @@ import MetaSeo from '../components/MetaSeo'
 import http from '../utilities/http'
 import constant from '../utilities/constant'
 import { useRouter } from 'next/router'
-import { route } from 'next/dist/server/router'
 
 export default function Portofolio({ portfolios }) {
     const [isOpen, setIsOpen] = useState(false)
