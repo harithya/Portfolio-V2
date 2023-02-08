@@ -38,8 +38,7 @@ export default function Portofolio({ portfolios }) {
                 <option value="Mobile Application">Mobile Application</option>
                 <option value="Web Application">Web Application</option>
                 <option value="Web Design">Web Design</option>
-            </select>}
-        >
+            </select>}>
             <MetaSeo
                 title="Portfolio - Harithya Wisesa"
                 description={"Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."}
