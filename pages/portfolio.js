@@ -34,7 +34,7 @@ export default function Portofolio({ portfolios }) {
         <Section
             title="Portfolio"
             subtitle="Beberapa pekerjaan yang sudah saya kerjakan dalam setahun terakhir."
-            action={<select className="text-gray-500 ring-0 outline-none cursor-pointer border w-full lg:w-52 py-3 px-5 border-dashed rounded-sm" onChange={handleFilter}>
+            action={<select className="text-gray-500 ring-0 dark:bg-black dark:text-white outline-none cursor-pointer border w-full lg:w-52 py-3 px-5 border-dashed rounded-sm" onChange={handleFilter}>
                 <option value="all">Semuanya</option>
                 <option value="Mobile Application">Mobile Application</option>
                 <option value="Web Application">Web Application</option>

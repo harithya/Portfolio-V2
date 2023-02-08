@@ -3,6 +3,7 @@ import Link from 'next/link';
 import MetaSeo from '../components/MetaSeo';
 import http from '../utilities/http';
 import constant from '../utilities/constant';
+import Typewriter from 'typewriter-effect';
 
 export default function Home({ setting }) {
   // const colors = ['#FE8A8A', '#51B0FF', '#8ECC47']
@@ -15,7 +16,16 @@ export default function Home({ setting }) {
         description='Hello World, nama saya Harithya Wisesa, saat ini saya bekerja di sebuah IT Contsultant di Tasikmalaya sebagai fullstack developer. Tapi untuk saat ini saya lebih cenderung bekerja di bagian mobile developer dan juga fontend menggunakan ekosistem React baik itu React JS ataupun React Native.'
       />
       <div className='xl:w-6/12' data-aos="fade-up">
-        <h1 className='font-doodle tracking-widest xl:text-4xl text-3xl text-center xl:text-left'>{setting.title}</h1>
+        <h1 className='font-doodle tracking-widest xl:text-4xl text-3xl  text-center xl:text-left'>
+          <Typewriter
+            options={{
+              strings: [setting.title, "I Design and Build Digital Solutions"],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+            }}
+          />
+        </h1>
         <p className='mt-5 mb-4 text-center xl:text-left leading-7'>{setting.subtitle}</p>
         <p className='text-center z-50 xl:text-left'>Lihat
           <Link href={"/portfolio"}>
