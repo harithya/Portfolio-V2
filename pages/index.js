@@ -17,7 +17,7 @@ export default function Home({ setting }) {
         <h1 className='font-doodle tracking-widest xl:text-4xl text-3xl  text-center xl:text-left'>
           <Typewriter
             options={{
-              strings: [setting.title, "I Design and Build Digital Solutions"],
+              strings: setting.title.split('|'),
               autoStart: true,
               loop: true,
               delay: 75,
