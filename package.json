@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@vercel/analytics": "^0.1.8",
     "aos": "^2.3.4",
     "axios": "^0.24.0",
