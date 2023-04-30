@@ -18,9 +18,7 @@ export default function about({ profile }) {
                 <div className='mt-12 flex flex-col justify-start w-full' data-aos="fade-up">
                     <Title>About</Title>
                     <Paragraph className='mt-8'>
-                        <div dangerouslySetInnerHTML={{ __html: profile.description }}>
-
-                        </div>
+                        <div dangerouslySetInnerHTML={{ __html: profile.description }} className="content-desc" />
                     </Paragraph>
                 </div>
             </div>

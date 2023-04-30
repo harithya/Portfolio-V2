@@ -10,3 +10,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.content-desc ol {
+  @apply list-disc ml-10 py-5;
+}

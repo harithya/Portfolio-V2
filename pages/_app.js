@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider attribute="class">
-        <MainLayout >
+        <MainLayout>
           <Component {...pageProps} />
         </MainLayout>
       </ThemeProvider>
