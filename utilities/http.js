@@ -8,4 +8,5 @@ const http = axios.create({
         "api-key": constant.key
     }
 });
+
 export default http;
