@@ -29,6 +29,22 @@ export default function Portofolio({ portfolios }) {
         }
     }
 
+    const nextData = () => {
+        const index = portfolios.findIndex((value) => value._id === singleData._id);
+        if (index + 1 < portfolios.length) {
+            setSingleData(portfolios[index + 1])
+        }
+    }
+
+    const prevData = () => {
+        const index = portfolios.findIndex((value) => value._id === singleData._id);
+        if (index - 1 >= 0) {
+            setSingleData(portfolios[index - 1])
+        }
+    }
+
+
+
     return (
         <Section
             title="Portfolio"
@@ -57,7 +73,20 @@ export default function Portofolio({ portfolios }) {
                 isOpen={isOpen}
                 onClose={handleCloseModal}
                 data={singleData}
-            />
+            >
+                {isOpen && <>
+                    <button onClick={prevData} className="fixed ml-5 left-0 top-[50%] z-50 border-2 ring-0 border-dashed h-14 borer w-14 lg:flex hidden justify-center items-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+                    <button onClick={nextData} className="fixed mr-5 right-0 top-[50%] z-50 border-2 ring-0 border-dashed h-14 borer w-14 lg:flex hidden justify-center items-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </>}
+            </PortfolioDetail>
         </Section>
     )
 }

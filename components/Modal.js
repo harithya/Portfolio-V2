@@ -48,6 +48,7 @@ export default function Modal(props) {
                         </div>
                     </Transition.Child>
                 </div>
+                {props.action}
             </Dialog>
         </Transition>
     )

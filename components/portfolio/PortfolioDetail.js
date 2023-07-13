@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function PortfolioDetail(props) {
     const portfolio = props.data;
     return (
-        <Modal isOpen={props.isOpen} onClose={props.onClose}>
+        <Modal isOpen={props.isOpen} onClose={props.onClose} action={props.children}>
             <Image
                 src={constant.storage + `${portfolio.img?.path}`}
                 alt={portfolio.title}
