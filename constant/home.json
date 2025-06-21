@@ -1,0 +1,31 @@
+{
+  "img": {
+    "path": "/2023/02/01/bg_uid_63d37b3e7e203_uid_63d9ce6d1b244.webp",
+    "title": "bg.png",
+    "mime": "image/webp",
+    "type": "image",
+    "description": "",
+    "tags": [],
+    "size": 233822,
+    "colors": ["#040404", "#080404", "#080404", "#080404", "#080404"],
+    "width": 3253,
+    "height": 4679,
+    "_hash": "39ee66537d5e3cf162270cd5209de145",
+    "_created": 1674804030,
+    "_modified": 1675218557,
+    "_cby": "74081d5d313037a19c000256",
+    "folder": "",
+    "_id": "74fe4f8d636635b63b0001ce",
+    "_mby": "74081d5d313037a19c000256"
+  },
+  "title": "Hi, I `m Harithya Wisesa|Building web and mobile app",
+  "subtitle": "Saya seorang fullstack developer dari Tasikmalaya yang berfokus pada Frontend Dev dan Mobile Dev. Menikmati membangun semuanya dari situs app kecil hingga app yang elegan. ",
+  "_model": "home",
+  "_state": 1,
+  "_modified": 1706697733,
+  "_mby": "74081d5d313037a19c000256",
+  "_created": 1674804038,
+  "_cby": "74081d5d313037a19c000256",
+  "_id": "74ff669f663437b95a000062",
+  "cv_link": "https://drive.google.com/file/d/1INoiNUzM4K8YHnroLdKNeJm7q559PrRG/view?usp=sharing"
+}
