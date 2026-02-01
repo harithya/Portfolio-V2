@@ -79,6 +79,9 @@ export default function About() {
                     "React Native",
                     "Tailwind CSS",
                     "Bootstrap",
+                    "Jquery",
+                    "Next JS",
+                    "Nuxt JS",
                   ],
                 },
                 {
@@ -93,11 +96,11 @@ export default function About() {
                 },
                 {
                   category: "Mobile",
-                  skills: ["React Native", "Android Native", "Flutter", "Expo"],
+                  skills: ["React Native", "Android Native", "Expo"],
                 },
                 {
                   category: "Tools & Others",
-                  skills: ["Git", "GitHub", "VS Code", "Figma"],
+                  skills: ["Git", "GitHub", "VS Code"],
                 },
               ].map((group, i) => (
                 <div

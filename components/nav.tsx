@@ -11,7 +11,7 @@ import { Switch } from "@/components/ui/switch";
 export function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -70,41 +70,49 @@ export function Navigation() {
           ))}
           {/* Theme Toggle (Desktop) */}
           <li>
-            <div className="flex items-center gap-2">
-              <Switch
-                checked={mounted && theme === "dark"}
-                onCheckedChange={(checked) =>
-                  setTheme(checked ? "dark" : "light")
-                }
-                aria-label="Toggle theme"
-              >
-                {mounted && theme === "dark" ? (
-                  <Moon size={12} className="text-foreground" />
-                ) : (
-                  <Sun size={12} className="text-foreground" />
-                )}
-              </Switch>
+            <div className="flex items-center gap-2 min-w-[44px]">
+              {mounted ? (
+                <Switch
+                  checked={resolvedTheme === "dark"}
+                  onCheckedChange={(checked) =>
+                    setTheme(checked ? "dark" : "light")
+                  }
+                  aria-label="Toggle theme"
+                >
+                  {resolvedTheme === "dark" ? (
+                    <Moon size={12} className="text-foreground" />
+                  ) : (
+                    <Sun size={12} className="text-foreground" />
+                  )}
+                </Switch>
+              ) : (
+                <div className="w-11 h-6 bg-muted animate-pulse rounded-full opacity-50" />
+              )}
             </div>
           </li>
         </ul>
 
         {/* Mobile Navigation Toggle & Theme Switcher */}
         <div className="flex items-center gap-2 md:hidden z-50 relative">
-          <div className="flex items-center gap-2">
-            <Switch
-              checked={mounted && theme === "dark"}
-              onCheckedChange={(checked) =>
-                setTheme(checked ? "dark" : "light")
-              }
-              aria-label="Toggle theme"
-              className="data-[state=checked]:bg-accent"
-            >
-              {mounted && theme === "dark" ? (
-                <Moon size={12} className="text-foreground" />
-              ) : (
-                <Sun size={12} className="text-foreground" />
-              )}
-            </Switch>
+          <div className="flex items-center gap-2 min-w-[44px]">
+            {mounted ? (
+              <Switch
+                checked={resolvedTheme === "dark"}
+                onCheckedChange={(checked) =>
+                  setTheme(checked ? "dark" : "light")
+                }
+                aria-label="Toggle theme"
+                className="data-[state=checked]:bg-accent"
+              >
+                {resolvedTheme === "dark" ? (
+                  <Moon size={12} className="text-foreground" />
+                ) : (
+                  <Sun size={12} className="text-foreground" />
+                )}
+              </Switch>
+            ) : (
+              <div className="w-11 h-6 bg-muted animate-pulse rounded-full opacity-50" />
+            )}
           </div>
 
           <button
