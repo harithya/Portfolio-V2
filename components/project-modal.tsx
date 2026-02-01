@@ -48,27 +48,6 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
       >
         {/* Scrollable Content */}
         <div className="overflow-y-auto flex-1">
-          {/* Close Button (Sticky) */}
-          <button
-            onClick={onClose}
-            className="sticky top-4 right-4 ml-auto block p-2 mr-4 mt-4 mb-[-3rem] z-20 bg-background/80 backdrop-blur-md rounded-full border border-border text-muted-foreground hover:text-foreground transition-all hover:bg-accent hover:text-white"
-            aria-label="Close modal"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-
           {/* Image */}
           <div className="relative w-full  bg-secondary">
             <img
@@ -98,7 +77,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
 
             <div className="pt-6 border-t border-border">
               <h3 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider flex items-center gap-2">
-                <span className="w-1 h-4 bg-accent rounded-full" />
+                <span className="w-1 h-4 bg-accent " />
                 Teknologi
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -113,6 +92,16 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Footer Close Button */}
+        <div className="p-4 border-t border-border bg-background flex justify-end shrink-0">
+          <button
+            onClick={onClose}
+            className="px-6 py-2 bg-secondary text-foreground hover:bg-accent hover:text-white transition-colors rounded-md font-medium text-sm border border-border"
+          >
+            Tutup
+          </button>
         </div>
       </div>
     </div>
