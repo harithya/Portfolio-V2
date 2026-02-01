@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectModalProps {
   project: {
@@ -11,6 +13,7 @@ interface ProjectModalProps {
     technologies: string[];
     year: string;
     image: string;
+    link?: string;
   };
   isOpen: boolean;
   onClose: () => void;
@@ -94,8 +97,19 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
           </div>
         </div>
 
-        {/* Footer Close Button */}
-        <div className="p-4 border-t border-border bg-background flex justify-end shrink-0">
+        {/* Footer Buttons */}
+        <div className="p-4 border-t border-border bg-background flex justify-end items-center gap-3 shrink-0">
+          {project.link && (
+            <Link
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-accent text-white hover:bg-accent/90 transition-colors rounded-md font-medium text-sm flex items-center gap-2"
+            >
+              Visit Link
+              <ExternalLink size={14} />
+            </Link>
+          )}
           <button
             onClick={onClose}
             className="px-6 py-2 bg-secondary text-foreground hover:bg-accent hover:text-white transition-colors rounded-md font-medium text-sm border border-border"

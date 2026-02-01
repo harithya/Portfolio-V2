@@ -25,6 +25,7 @@ export default function Portfolio() {
       ],
       year: "2025",
       image: "/portofolio/meatmap.png",
+      link: "https://meatmap.id/",
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ export default function Portfolio() {
       technologies: ["Laravel", "Jquery", "Mysql", "Xendit"],
       year: "2025",
       image: "/portofolio/Skillup.png",
+      link: "https://skillup.id/",
     },
     {
       id: 3,
@@ -52,6 +54,7 @@ export default function Portfolio() {
       technologies: ["Jquery", "Docusaurus"],
       year: "2025",
       image: "/portofolio/Iampact.png",
+      link: "https://iampact.vercel.app/",
     },
     {
       id: 5,
@@ -97,6 +100,7 @@ export default function Portfolio() {
       technologies: ["React Native", "Node JS"],
       year: "2025",
       image: "/portofolio/Pokedex.png",
+      link: "https://github.com/harithya/Pokedex-",
     },
   ];
 
