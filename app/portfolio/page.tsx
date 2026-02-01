@@ -179,7 +179,7 @@ export default function Portfolio() {
           </div>
 
           {/* CTA Section */}
-          <div className="py-12 px-6 bg-secondary/30 border border-border text-center space-y-6">
+          {/* <div className="py-12 px-6 bg-secondary/30 border border-border text-center space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
               Interested in Collaborating?
             </h2>
@@ -193,7 +193,7 @@ export default function Portfolio() {
             >
               Contact Me
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
