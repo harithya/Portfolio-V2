@@ -1,108 +1,108 @@
 "use client";
 
 import { useState } from "react";
+
 import { Navigation } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { ProjectModal } from "@/components/project-modal";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 
+const ProjectModal = dynamic(
+  () => import("@/components/project-modal").then((mod) => mod.ProjectModal),
+  { ssr: false },
+);
+
+const projects = [
+  {
+    id: 1,
+    title: "Meat Map",
+    description:
+      "A platform for discovering trending culinary and sports references that are currently going viral.<span class='line-new'></span>The data is collected through social media scraping and presented after processing, including cleaning, enhancement, and analysis using the Gemini AI LLM.",
+    technologies: ["Laravel", "Vue JS", "Mysql", "Gemini API", "Tailwind CSS"],
+    year: "2025",
+    image: "/portofolio/meatmap.png",
+    link: "https://meatmap.id/",
+  },
+  {
+    id: 2,
+    title: "Skillup",
+    description:
+      "Increase productivity and happiness through quality ebooks, ecourses, and webinars.<span class='line-new'></span>Be guided by expert trainers from the Trainer Academy and receive full support.",
+    technologies: ["Laravel", "Jquery", "Mysql", "Xendit"],
+    year: "2025",
+    image: "/portofolio/Skillup.png",
+    link: "https://skillup.id/",
+  },
+  {
+    id: 3,
+    title: "Office Digital",
+    description:
+      "A multi-tenant application that allows multiple organizations to use the same system with separate databases.<span class='line-new'></span>Built with a secure, scalable, and easy-to-maintain architecture, making it ideal for large enterprises.",
+    technologies: ["Laravel", "Jquery", "Mysql", "Multi Tenant"],
+    year: "2025",
+    image: "/portofolio/Office Digital.png",
+  },
+  {
+    id: 4,
+    title: "Iampact",
+    description:
+      "This starter pack is a repository that provides starter code for various AJAX needs and utility functions.<span class='line-new'></span>It is designed to help teams work faster and more efficiently in handling repetitive tasks.<span class='line-new'></span>Modules Provided: HTTP, NOTIFY, TABLES, FORMATTER.<span class='line-new'></span>Key Features: Simple fetching, automatic form validation, modern notifications, simple tables with scalable data export, and formatter.",
+    technologies: ["Jquery", "Docusaurus"],
+    year: "2025",
+    image: "/portofolio/Iampact.png",
+    link: "https://iampact.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Point of Sale Al Luthfi",
+    description:
+      "POS Al Luthfi is a point-of-sale application designed to manage sales transactions, products, and reports efficiently.<span class='line-new'></span>The system supports cashier operations, receipt printing, and real-time data synchronization.<span class='line-new'></span>It helps business owners monitor daily sales, stock, and performance easily.<span class='line-new'></span>Key Features: Sales management, product management, receipt printing, transaction history, and basic reporting.",
+    technologies: ["React Native", "Mysql", "Print Recipe", "Laravel"],
+    year: "2023",
+    image: "/portofolio/Al Luthfi.png",
+  },
+  {
+    id: 6,
+    title: "Absent Setda Tasikmalaya",
+    description:
+      "Absent Setda Tasikmalaya is a web-based attendance management system designed to streamline employee attendance tracking for the Regional Secretariat of Tasikmalaya.<span class='line-new'></span>The system provides a simple and efficient way for employees to record their attendance and for administrators to monitor attendance data",
+    technologies: ["React Native", "Laravel", "Mysql", "Firebase"],
+    year: "2023",
+    image: "/portofolio/Absensi Setda.png",
+  },
+  {
+    id: 7,
+    title: "Cargo Management System",
+    description:
+      "Budiman Cargo Management System is a web-based cargo management system designed to streamline cargo management for PT. HS Budiman  .<span class='line-new'></span>The system provides a simple and efficient way for employees to manage cargo and for administrators to monitor cargo data",
+    technologies: ["Vue JS", "Laravel", "Postgres"],
+    year: "2025",
+    image: "/portofolio/Budiman Cargo.png",
+  },
+  {
+    id: 8,
+    title: "Skillup Admin",
+    description:
+      "Skillup Admin is a web-based admin system designed to streamline admin management.<span class='line-new'></span>The system provides a simple and efficient way for employees to manage admin and for administrators to monitor admin data",
+    technologies: ["Jquery", "Laravel", "Mysql"],
+    year: "2025",
+    image: "/portofolio/Skillup Admin.png",
+  },
+  {
+    id: 9,
+    title: "Pokedex",
+    description:
+      "Pokedex is a mobile application that allows users to view information about Pokémon.<span class='line-new'></span>The system provides a simple and efficient way for users to view information about Pokémon",
+    technologies: ["React Native", "Node JS"],
+    year: "2025",
+    image: "/portofolio/Pokedex.png",
+    link: "https://github.com/harithya/Pokedex-",
+  },
+];
+
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
-
-  const projects = [
-    {
-      id: 1,
-      title: "Meat Map",
-      description:
-        "A platform for discovering trending culinary and sports references that are currently going viral.<span class='line-new'></span>The data is collected through social media scraping and presented after processing, including cleaning, enhancement, and analysis using the Gemini AI LLM.",
-      technologies: [
-        "Laravel",
-        "Vue JS",
-        "Mysql",
-        "Gemini API",
-        "Tailwind CSS",
-      ],
-      year: "2025",
-      image: "/portofolio/meatmap.png",
-      link: "https://meatmap.id/",
-    },
-    {
-      id: 2,
-      title: "Skillup",
-      description:
-        "Increase productivity and happiness through quality ebooks, ecourses, and webinars.<span class='line-new'></span>Be guided by expert trainers from the Trainer Academy and receive full support.",
-      technologies: ["Laravel", "Jquery", "Mysql", "Xendit"],
-      year: "2025",
-      image: "/portofolio/Skillup.png",
-      link: "https://skillup.id/",
-    },
-    {
-      id: 3,
-      title: "Office Digital",
-      description:
-        "A multi-tenant application that allows multiple organizations to use the same system with separate databases.<span class='line-new'></span>Built with a secure, scalable, and easy-to-maintain architecture, making it ideal for large enterprises.",
-      technologies: ["Laravel", "Jquery", "Mysql", "Multi Tenant"],
-      year: "2025",
-      image: "/portofolio/Office Digital.png",
-    },
-    {
-      id: 4,
-      title: "Iampact",
-      description:
-        "This starter pack is a repository that provides starter code for various AJAX needs and utility functions.<span class='line-new'></span>It is designed to help teams work faster and more efficiently in handling repetitive tasks.<span class='line-new'></span>Modules Provided: HTTP, NOTIFY, TABLES, FORMATTER.<span class='line-new'></span>Key Features: Simple fetching, automatic form validation, modern notifications, simple tables with scalable data export, and formatter.",
-      technologies: ["Jquery", "Docusaurus"],
-      year: "2025",
-      image: "/portofolio/Iampact.png",
-      link: "https://iampact.vercel.app/",
-    },
-    {
-      id: 5,
-      title: "Point of Sale Al Luthfi",
-      description:
-        "POS Al Luthfi is a point-of-sale application designed to manage sales transactions, products, and reports efficiently.<span class='line-new'></span>The system supports cashier operations, receipt printing, and real-time data synchronization.<span class='line-new'></span>It helps business owners monitor daily sales, stock, and performance easily.<span class='line-new'></span>Key Features: Sales management, product management, receipt printing, transaction history, and basic reporting.",
-      technologies: ["React Native", "Mysql", "Print Recipe", "Laravel"],
-      year: "2023",
-      image: "/portofolio/Al Luthfi.png",
-    },
-    {
-      id: 6,
-      title: "Absent Setda Tasikmalaya",
-      description:
-        "Absent Setda Tasikmalaya is a web-based attendance management system designed to streamline employee attendance tracking for the Regional Secretariat of Tasikmalaya.<span class='line-new'></span>The system provides a simple and efficient way for employees to record their attendance and for administrators to monitor attendance data",
-      technologies: ["React Native", "Laravel", "Mysql", "Firebase"],
-      year: "2023",
-      image: "/portofolio/Absensi Setda.png",
-    },
-    {
-      id: 7,
-      title: "Cargo Management System",
-      description:
-        "Budiman Cargo Management System is a web-based cargo management system designed to streamline cargo management for PT. HS Budiman  .<span class='line-new'></span>The system provides a simple and efficient way for employees to manage cargo and for administrators to monitor cargo data",
-      technologies: ["Vue JS", "Laravel", "Postgres"],
-      year: "2025",
-      image: "/portofolio/Budiman Cargo.png",
-    },
-    {
-      id: 8,
-      title: "Skillup Admin",
-      description:
-        "Skillup Admin is a web-based admin system designed to streamline admin management.<span class='line-new'></span>The system provides a simple and efficient way for employees to manage admin and for administrators to monitor admin data",
-      technologies: ["Jquery", "Laravel", "Mysql"],
-      year: "2025",
-      image: "/portofolio/Skillup Admin.png",
-    },
-    {
-      id: 9,
-      title: "Pokedex",
-      description:
-        "Pokedex is a mobile application that allows users to view information about Pokémon.<span class='line-new'></span>The system provides a simple and efficient way for users to view information about Pokémon",
-      technologies: ["React Native", "Node JS"],
-      year: "2025",
-      image: "/portofolio/Pokedex.png",
-      link: "https://github.com/harithya/Pokedex-",
-    },
-  ];
 
   return (
     <main className="min-h-screen bg-background">
@@ -143,7 +143,7 @@ export default function Portfolio() {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <article
                 key={project.id}
                 className="overflow-hidden border border-border hover:border-accent transition-all duration-300 group cursor-pointer"
@@ -158,6 +158,7 @@ export default function Portfolio() {
                     height={500}
                     className="w-full h-auto object-contain"
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    priority={index === 0}
                   />
                 </div>
 
