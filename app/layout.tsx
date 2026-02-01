@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Noto_Serif_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { JapaneseOrnaments } from "@/components/japanese-ornaments";
 
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${notoSerifJP.className} antialiased bg-background text-foreground`}
       >
-        <JapaneseOrnaments />
-        {children}
-        <Analytics />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <JapaneseOrnaments />
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );

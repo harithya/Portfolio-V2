@@ -120,7 +120,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-500 ease-in-out;
+  }
+  * {
+    @apply transition-[background-color,border-color,color,fill,stroke] duration-500 ease-in-out;
   }
   h1 {
     @apply tracking-tight;

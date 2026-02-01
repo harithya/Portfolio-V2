@@ -3,12 +3,20 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 
 export function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Lock body scroll when menu is open
   useEffect(() => {
@@ -60,20 +68,57 @@ export function Navigation() {
               </Link>
             </li>
           ))}
+          {/* Theme Toggle (Desktop) */}
+          <li>
+            <div className="flex items-center gap-2">
+              <Switch
+                checked={mounted && theme === "dark"}
+                onCheckedChange={(checked) =>
+                  setTheme(checked ? "dark" : "light")
+                }
+                aria-label="Toggle theme"
+              >
+                {mounted && theme === "dark" ? (
+                  <Moon size={12} className="text-foreground" />
+                ) : (
+                  <Sun size={12} className="text-foreground" />
+                )}
+              </Switch>
+            </div>
+          </li>
         </ul>
 
-        {/* Mobile Navigation Toggle */}
-        <button
-          className="md:hidden z-50 relative p-2 -mr-2 text-foreground hover:text-accent transition-colors focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? (
-            <X size={28} strokeWidth={1.5} />
-          ) : (
-            <Menu size={28} strokeWidth={1.5} />
-          )}
-        </button>
+        {/* Mobile Navigation Toggle & Theme Switcher */}
+        <div className="flex items-center gap-2 md:hidden z-50 relative">
+          <div className="flex items-center gap-2">
+            <Switch
+              checked={mounted && theme === "dark"}
+              onCheckedChange={(checked) =>
+                setTheme(checked ? "dark" : "light")
+              }
+              aria-label="Toggle theme"
+              className="data-[state=checked]:bg-accent"
+            >
+              {mounted && theme === "dark" ? (
+                <Moon size={12} className="text-foreground" />
+              ) : (
+                <Sun size={12} className="text-foreground" />
+              )}
+            </Switch>
+          </div>
+
+          <button
+            className="p-2 -mr-2 text-foreground hover:text-accent transition-colors focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? (
+              <X size={28} strokeWidth={1.5} />
+            ) : (
+              <Menu size={28} strokeWidth={1.5} />
+            )}
+          </button>
+        </div>
 
         {/* Mobile Navigation Content */}
         <div
