@@ -103,7 +103,7 @@ export function Navigation() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "inline-block text-4xl font-serif font-medium tracking-wide transition-all duration-300 relative py-2",
+                    "inline-block lg:text-4xl text-3xl font-serif font-medium tracking-wide transition-all duration-300 relative py-2",
                     pathname === item.href
                       ? "text-foreground italic"
                       : "text-muted-foreground hover:text-foreground",

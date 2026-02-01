@@ -125,7 +125,7 @@ export default function Portfolio() {
           </span>
         </div>
 
-        <div className="max-w-7xl lg:px-0 px-6 mx-auto space-y-16 relative z-10">
+        <div className="max-w-7xl lg:px-0 lg:px-6 mx-auto space-y-16 relative z-10">
           {/* Header */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
