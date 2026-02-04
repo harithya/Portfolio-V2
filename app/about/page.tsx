@@ -100,7 +100,7 @@ export default function About() {
                 },
                 {
                   category: "Tools & Others",
-                  skills: ["Git", "GitHub", "VS Code"],
+                  skills: ["Git", "GitHub", "VS Code", "Docker", "Redis"],
                 },
               ].map((group, i) => (
                 <div
