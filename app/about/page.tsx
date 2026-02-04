@@ -96,7 +96,7 @@ export default function About() {
                 },
                 {
                   category: "Mobile",
-                  skills: ["React Native", "Android Native", "Expo"],
+                  skills: ["React Native", "Expo"],
                 },
                 {
                   category: "Tools & Others",
