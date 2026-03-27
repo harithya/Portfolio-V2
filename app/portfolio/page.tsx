@@ -97,6 +97,7 @@ const projects = [
     technologies: ["Nuxt JS", "Tailwind CSS", "Pinia", "Docker"],
     year: "2026",
     image: "/portofolio/tripay.png",
+    link: "https://dashboard.tripay.co.id/",
   },
 ];
 
