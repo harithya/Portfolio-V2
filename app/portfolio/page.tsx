@@ -91,13 +91,12 @@ const projects = [
   },
   {
     id: 9,
-    title: "Pokedex",
+    title: "Tripay Payment",
     description:
-      "Pokedex is a mobile application that allows users to view information about Pokémon.<span class='line-new'></span>The system provides a simple and efficient way for users to view information about Pokémon",
-    technologies: ["React Native", "Node JS"],
-    year: "2025",
-    image: "/portofolio/Pokedex.png",
-    link: "https://github.com/harithya/Pokedex-",
+      "Redesigned the Tripay Member dashboard to improve usability and overall user experience. Focused on simplifying transaction flows, enhancing information hierarchy, and creating a more modern and consistent UI. The redesign helps users better understand features, reduces confusion, and increases efficiency in managing payments.",
+    technologies: ["Nuxt JS", "Tailwind CSS", "Pinia", "Docker"],
+    year: "2026",
+    image: "/portofolio/tripay.png",
   },
 ];
 
